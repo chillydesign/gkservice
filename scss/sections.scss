@@ -83,12 +83,12 @@ section {
 
         .service_icon {
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center center;
             background-color: $light_grey;
             height: 210px;
             width: 210px;
-            border-radius: 50%;
+            border-radius: 40%;
 
             @media (min-width: $browser_small) {
                 height: 150px;
