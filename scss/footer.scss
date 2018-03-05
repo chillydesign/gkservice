@@ -44,3 +44,20 @@ footer {
 
 
 }
+
+
+
+$social_icon_size: 35px;
+.social_icon {
+    padding:10px 10px 10px #{$social_icon_size * 1.2};
+    background: no-repeat center left;
+    background-size: $social_icon_size;
+
+
+    &.social_icon_facebook {
+        background-image: url('../img/facebook.svg')
+    }
+    &.social_icon_instagram {
+        background-image: url('../img/instagram.svg')
+    }
+}

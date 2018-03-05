@@ -13,10 +13,8 @@ table {	border-collapse: collapse;	border-spacing: 0}
   -moz-box-sizing: border-box;
   box-sizing: border-box;}
 
-
-  @media (min-width: 768px) { }
-  @media (min-width: 992px) { }
-  @media (min-width: 1200px) { }
+  @media (min-width: $browser_verysmall) { }
+  @media (min-width: $browser_small) { }
 
 
   /*BOOTSTRAP STUFF*/

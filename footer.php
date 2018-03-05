@@ -5,34 +5,28 @@
     <div class="container">
         <div class="footer_columns">
             <div class="footer_column">
-                <h4>Contact</h4>
+                <h4>Lipsum</h4>
                 <ul>
-                    <li><a href="mailto:info@agate17.ch">info@agate17.ch</a></li>
-                    <li><a href="tel:41796579178">+41 (0)79 657 91 78</a></li>
+                    <li><a href="#">lipsum dolor sit</a></li>
+                    <li><a href="#">lipsum dolor sit</a></li>
                 </ul>
 
 
             </div>
             <div class="footer_column">
 
-                <h4>Réservation</h4>
-                <ul>
-                    <?php chilly_nav('footer_reservation'); ?>
-                </ul>
+                <h4>Suivez-nous</h4>
+                <p> <a  class="social_icon social_icon_facebook" href="#">Suivez-nous sur Facebook</a>  <br>
+                    <a  class="social_icon social_icon_instagram" href="#">Suivez-nous sur Instagram</a> </p>
 
 
             </div>
-            <div class="footer_column">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <?php chilly_nav('footer_liens_utiles'); ?>
-                </ul>
-            </div>
+
 
         </div>
     </div>
     <div id="copyright">
-        <div class="container"><p>&copy; <?php echo date('Y'); ?> Chalet Agate.  Website by <a href="https://webfactor.ch">Webfactor</a>. </p></div>
+        <div class="container"><p>&copy; <?php echo date('Y'); ?> GK Service.  Website by <a href="https://webfactor.ch">Webfactor</a>. </p></div>
     </div>
 
 </footer>

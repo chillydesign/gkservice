@@ -1,5 +1,4 @@
 import slick from '../node_modules/slick-carousel/slick/slick.js';
-import Masonry from '../node_modules/masonry-layout/dist/masonry.pkgd.js';
 import featherlight from '../node_modules/featherlight/release/featherlight.min.js';
 
 (function ($, root, undefined) {
@@ -11,14 +10,6 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
         var $window = $(window);
         var $body = $('body');
 
-        // START OF PARALLAX
-        var $header_image = $('#header_image');
-        $window.scroll(function(){
-            var windowScroll = $window.scrollTop();
-            var translateY = windowScroll * 0.3;
-            $header_image.css({'transform': 'translateY(' + translateY + 'px)'  });
-        });
-        // END OF PARALLAX
 
 
 
@@ -38,25 +29,12 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
         })
 
 
-        //MASONRY GALLERY
-        var grid = document.querySelector('.masonry_gallery');
-        setTimeout( function(){
-            var msnry = new Masonry( grid, {
-              itemSelector: '.grid_item'
-            });
-        }, 500 );
-
-        //END OF MASONRY GALLERY
-
-
-
 
 
         // START OF CAROUSEL
-        var $slidesToShow = 1;
-        if ($window.width() > 768 ) {
-            $slidesToShow = 3;
-        }
+        var $slidesToShow  = Math.floor( $('.container').width()  / 250 );
+
+
         $('.carousel').slick({
             // options
             infinite: true,
@@ -66,7 +44,9 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
             prevArrow: '<div class="slick-prev">&lt;</div>',
             nextArrow: '<div class="slick-next">&gt;</div>',
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            centerMode: true,
+
         });
         // END OF CAROUSEL
 
