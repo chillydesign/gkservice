@@ -86,7 +86,7 @@ header#page_header {
                     color: white;
                     padding: 20px 20px;
                     border: 0;
-                        border-bottom: 1px solid transparent;
+                        border-bottom: 3px double transparent;
 
                     &:hover {
                         background-color: transparentize(white, 0.8);
@@ -98,7 +98,7 @@ header#page_header {
                         padding: 10px 20px;
                         &:hover {
                             background-color: transparentize(white, 0.5);
-                            border-bottom: 1px solid $brand_color;
+                            border-bottom: 3px double $brand_color;
                         }
                     }
 

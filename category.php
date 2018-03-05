@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	
+
 		<!-- section -->
-		<section>
+		<section class="container">
 
 			<h1><?php _e( 'Categories for ', 'webfactor' ); single_cat_title(); ?></h1>
 
@@ -12,7 +12,7 @@
 
 		</section>
 		<!-- /section -->
-	
+
 
 <?php get_sidebar(); ?>
 

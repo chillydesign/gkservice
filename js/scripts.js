@@ -32,7 +32,9 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
 
 
         // START OF CAROUSEL
-        var $slidesToShow  = Math.floor( $('.container').width()  / 250 );
+        var $slidesToShow  = Math.floor( $('.container').width()  / 300 );
+        console.log( $('.container').width() );
+        console.log($slidesToShow);
 
 
         $('.carousel').slick({

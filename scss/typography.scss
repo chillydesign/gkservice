@@ -17,6 +17,11 @@ h2 {
     padding: 0 0 20px;
     font-weight: bold;
     text-transform: uppercase;
+    span {
+        display: inline-block;
+        border-bottom: 4px double $brand_color;
+        padding: 0 0 3px;
+    }
 }
 h3 {
     font-size: 2.21em;
@@ -66,7 +71,7 @@ section ol {
 
 a {
     text-decoration: none;
-    border-bottom:1px solid saturate(lighten($brand_color,25),10);
+    border-bottom:3px double saturate(lighten($brand_color,25),10);
     display: inline-block;
     @include transition(0.3s);
 

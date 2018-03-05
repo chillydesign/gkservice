@@ -1,8 +1,8 @@
 footer {
-    background: $brand_color;
+    background: $dark_grey;
     padding:0;
     margin:40px 0 0;
-    color: lighten( $brand_color, 75);
+    color: lighten( $font_color, 75);
 
     h4 {
         text-transform: uppercase;
@@ -33,6 +33,7 @@ footer {
     }
 
     #copyright {
+        background-color: darken($dark_grey, 10);
         border-top:1px solid white;
         padding: 20px 0;
         text-align: center;

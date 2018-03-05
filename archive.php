@@ -2,7 +2,7 @@
 
 
 		<!-- section -->
-		<section>
+		<section class="container">
 
 			<h1><?php _e( 'Archives', 'webfactor' ); ?></h1>
 
@@ -13,7 +13,5 @@
 		</section>
 		<!-- /section -->
 
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
