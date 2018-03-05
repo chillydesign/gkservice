@@ -28,6 +28,38 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
             }
         })
 
+        $('#main').on('click', function() {
+                $nav.removeClass('visible');
+        });
+
+
+
+        // SLIDE TO SECTION ON CLICK
+        $(' .slidelink').on('click', function(e){
+
+            e.preventDefault();
+            var $this = $(this);
+            var $href = $this.attr('href');
+            var $hash = $href.split('#')[1];
+
+            // IF THERE IS AN ID ON THE PAGE, SLIDE TO THAT LINK
+            // OTHERWISE USE JS TO REDIRECT TO PAGE
+            if (typeof $hash !== 'undefined') {
+                var $location = $('#' + $hash);
+                if($location.length  > 0) {
+                    $("html, body").animate({ scrollTop: $location.offset().top }, 1000);
+                        $nav.removeClass('visible');
+                } else {
+                    window.location.href = $href;
+                }
+            } else {
+                window.location.href = $href;
+            }
+
+        });
+
+
+
 
 
 

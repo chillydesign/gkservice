@@ -30,9 +30,9 @@
                         <nav>
                             <ul>
                                 <?php // chilly_nav('header_nav'); ?>
-                                <li><a href="<?php echo $home_url ; ?>/#section_services_1">Services</a></li>
-                                <li><a href="<?php echo $home_url ; ?>/#section_colonnes_2">Qui Sommes Nous</a></li>
-                                <li><a href="<?php echo $home_url ; ?>/#section_colonnes_4">Contact</a></li>
+                                <li><a class="slidelink" href="<?php echo $home_url ; ?>/#section_services_1">Services</a></li>
+                                <li><a class="slidelink" href="<?php echo $home_url ; ?>/#section_colonnes_2">Qui Sommes Nous</a></li>
+                                <li><a class="slidelink" href="<?php echo $home_url ; ?>/#section_colonnes_4">Contact</a></li>
                             </ul>
                         </nav>
                     </header>
