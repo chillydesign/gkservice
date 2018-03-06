@@ -1,7 +1,9 @@
 <?php $services = get_sub_field('service'); ?>
+<?php $title = get_sub_field('title'); ?>
 
 
 <div class="container">
+        <?php if ($title): ?> <h2><span><?php echo $title; ?></span></h2> <?php endif; ?>
     <div class="services_container">
         <?php foreach ($services as $service)  :  ?>
             <?php $image = $service['icon']['sizes']['medium']; ?>

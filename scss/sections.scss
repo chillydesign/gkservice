@@ -33,14 +33,16 @@ section {
 
 
 .section_feature_image {
-    padding-top: 0;
     position: relative;
+    border-top: 6px double $brand_color;
+    border-bottom: 6px double $brand_color;
+    padding: 0;
 
     h2 {
         max-width: 500px;
         font-size: 4em;
         text-align: left;
-        padding: 100px 0;
+        padding: 120px 0;
         color: white;
         position: relative;
         z-index: 2;
