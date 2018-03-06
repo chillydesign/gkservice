@@ -29,7 +29,7 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
         })
 
         $('#main').on('click', function() {
-                $nav.removeClass('visible');
+            $nav.removeClass('visible');
         });
 
 
@@ -48,7 +48,7 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
                 var $location = $('#' + $hash);
                 if($location.length  > 0) {
                     $("html, body").animate({ scrollTop: $location.offset().top }, 1000);
-                        $nav.removeClass('visible');
+                    $nav.removeClass('visible');
                 } else {
                     window.location.href = $href;
                 }
@@ -64,22 +64,33 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
 
 
         // START OF CAROUSEL
-        var $slidesToShow  = Math.floor( $('.container').width()  / 300 );
-        console.log( $('.container').width() );
-        console.log($slidesToShow);
-
 
         $('.carousel').slick({
             // options
             infinite: true,
             accessibility: true,
-            slidesToShow: $slidesToShow,
+            slidesToShow: 3,
             slidesToScroll: 1,
             prevArrow: '<div class="slick-prev">&lt;</div>',
             nextArrow: '<div class="slick-next">&gt;</div>',
             autoplay: true,
             autoplaySpeed: 2000,
             centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: false
+                    }
+                }
+            ]
 
         });
         // END OF CAROUSEL
