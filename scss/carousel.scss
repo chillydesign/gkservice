@@ -77,9 +77,8 @@
         display: block;
         width: 90%;
         margin: 0 5% 10px;
-
         height: auto;
-        box-shadow: 0 5px 9px transparentize($dark_grey, 0.8);
+        box-shadow: 0 0 0;
     }
     &.slick-loading img {
         display: none;
