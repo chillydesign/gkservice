@@ -98,6 +98,7 @@ section {
         justify-content: center;
         margin: 0 0 30px;
 
+
         .service_icon {
             background-repeat: no-repeat;
             background-size: 180px;
@@ -105,6 +106,8 @@ section {
             background-color: $light_grey;
             height: 210px;
             width: 210px;
+            transform: scale(1);
+            transition: all 0.3s;
             border-radius: 50%;
 
             @media (min-width: $browser_small) {
@@ -123,6 +126,13 @@ section {
                 background-size: 220px;
             }
         }
+
+
+                &:hover {
+                    .service_icon {
+                        transform: scale(1.1);
+                    }
+                }
 
         h3 {
             font-size: 2em;
