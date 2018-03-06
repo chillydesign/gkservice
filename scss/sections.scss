@@ -74,7 +74,9 @@ section {
 
 
 
-
+.section_services {
+    text-align: center;
+}
 .services_container {
 
     margin: 0;
@@ -91,7 +93,6 @@ section {
     .single_service {
         flex: 1 auto 0;
         width: 100%;
-        text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
