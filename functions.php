@@ -88,7 +88,7 @@ function webfactor_nav()
 }
 
 function wf_version(){
-  return '0.0.3';
+  return '0.0.4';
 }
 
 // Load HTML5 Blank scripts (header.php)
@@ -585,12 +585,12 @@ function thumbnail_of_post_url( $post_id,  $size='large'  ) {
 }
 
 
-/// remove at later date
-function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
-}
-add_filter('upload_mimes', 'cc_mime_types');
+
+// function cc_mime_types($mimes) {
+//   $mimes['svg'] = 'image/svg+xml';
+//   return $mimes;
+// }
+// add_filter('upload_mimes', 'cc_mime_types');
 
 
 
