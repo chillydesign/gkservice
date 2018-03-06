@@ -19,8 +19,18 @@ h2 {
     text-transform: uppercase;
     span {
         display: inline-block;
-        border-bottom: 4px double $brand_color;
-        padding: 0 0 3px;
+        padding-bottom: 20px;
+        position: relative;
+         &:before {
+            content: '';
+            height: 15px;
+            width: 200px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            border-bottom: 4px double #b11b1a;
+            left: calc(50% - 100px);
+        }
     }
 }
 h3 {
