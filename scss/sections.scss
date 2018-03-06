@@ -100,7 +100,7 @@ section {
 
         .service_icon {
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 180px;
             background-position: center center;
             background-color: $light_grey;
             height: 210px;
@@ -110,14 +110,17 @@ section {
             @media (min-width: $browser_small) {
                 height: 150px;
                 width: 150px;
+                background-size: 130px;
             }
             @media (min-width: $browser_medium) {
                 height: 200px;
                 width: 200px;
+                background-size: 170px;
             }
             @media (min-width: $browser_large) {
                 height: 250px;
                 width: 250px;
+                background-size: 220px;
             }
         }
 
