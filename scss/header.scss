@@ -6,15 +6,15 @@ header#page_header {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    padding: 20px 0 20px;
+    padding: 20px 0;
 
     a.branding {
         display: block;
         flex:1 auto 0;
-        background: url('../img/logo.png') no-repeat left bottom;
+        background: url('../img/logo.svg') no-repeat left top;
         background-size: contain;
-        height: 125px;
-        width: 219px;
+        height: 75px;
+        width: 300px;
         text-indent: -9999px;
         border: 0;
 
@@ -62,7 +62,7 @@ header#page_header {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content:flex-end;
-                margin: 40px 0 0;
+                margin: 20px 0 0;
             }
 
 
@@ -122,8 +122,8 @@ header#page_header {
         background-size: 25px;
         text-indent: -9999px;
         position: absolute;
-        top:40px;
-        right: 20px;
+        top: 55px;
+        right: 15px;
         border: 0;
         cursor: pointer;
         z-index: 60;
