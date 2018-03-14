@@ -12,6 +12,7 @@ $mob_nav_width: 300px;
     position: fixed;
     z-index: 9999999999999;
     background: white;
+    background: transparentize(white, 0.03);
   }
 
   main#main {
