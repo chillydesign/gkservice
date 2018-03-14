@@ -2,23 +2,43 @@
 <?php $tdu = get_template_directory_uri(); ?>
 
 <footer>
-    <div class="container">
-        <div class="footer_columns">
+  <div style="background-image:url(<?php echo get_template_directory_uri();?>/img/cheval-pas.jpg); background-size:cover; background-position:center;    border-top: 6px double #fff;position:relative;">
+    <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(51, 51, 52, 0.5); z-index:1;"></div>
+    <div class="container" style="z-index:2; position:relative" >
+        <div class="footer_columns" >
             <div class="footer_column">
-                <h4>Lipsum</h4>
-                <ul>
-                    <li><a href="#">lipsum dolor sit</a></li>
-                    <li><a href="#">lipsum dolor sit</a></li>
-                </ul>
+
+                <h4>Contact</h4>
+                <p>
+                  <strong>Garzetta Kernen Sàrl</strong><br>
+                  1207 Genève<br><br>
+                  <strong>Téléphone :</strong> 022 849 05 49<br>
+                  <strong>Email :</strong> <a href="mailto:contact@gkservice.ch" target="_blank">contact@gkservice.ch</a>
+                </p>
 
 
             </div>
             <div class="footer_column">
 
-                <h4>Suivez-nous</h4>
-                <p> <a  class="social_icon social_icon_facebook" href="#">Suivez-nous sur Facebook</a>  <br>
-                    <a  class="social_icon social_icon_instagram" href="#">Suivez-nous sur Instagram</a> </p>
+                <h4>Nos services</h4>
+                <p>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Dépannage Serrurerie</a>  <br>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Services à la personne</a>  <br>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Entretien</a>
+                </p>
 
+
+            </div>
+
+            <div class="footer_column">
+
+                <h4>Suivez-nous</h4>
+                <p> <a  class="social_icon social_icon_facebook" href="https://www.facebook.com/garzettakernensarl/" target="_blank">Suivez-nous sur Facebook</a>  <br>
+                  <a  class="social_icon social_icon_instagram" href="https://www.instagram.com/garzettakernensarl/" target="_blank">Suivez-nous sur Instagram</a>  <br>
+                    <a  class="social_icon social_icon_linkedin" href="https://www.linkedin.com/company/garzetta-kernen-sarl/"  target="_blank">Suivez-nous sur LinkedIn</a> </p>
+
+
+            </div>
 
             </div>
 
@@ -26,7 +46,7 @@
         </div>
     </div>
     <div id="copyright">
-        <div class="container"><p>&copy; <?php echo date('Y'); ?> GK Service.  Website by <a href="https://webfactor.ch">Webfactor</a>. </p></div>
+        <div class="container"><p>&copy; <?php echo date('Y'); ?> GK Service.  Website by <a href="https://webfactor.ch">Webfactor</a></p></div>
     </div>
 
 </footer>

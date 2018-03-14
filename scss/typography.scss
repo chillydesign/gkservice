@@ -140,4 +140,46 @@ blockquote {
 }
 blockquote p:last-child {padding-bottom: 0}
 
+form {font-size: 14px;}
+textarea {width: 100%; margin-top: 5px;border: solid 1px;    margin-bottom: 20px;
+}
+span.wpcf7-form-control-wrap.demande textarea {
+    height: 258px;
+}
 input {padding: 10px;width: 100%;font-size: 1.5em;appearance:none;}
+input[type="radio"] {
+    border: solid 1px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 0 4px -4px 0;
+    padding: 8px;
+}
+
+input[type="radio"]:checked {
+    background: #ee3642;
+}
+input[type="radio"]:focus {
+    box-shadow: none;
+    outline:0;
+}
+
+input.wpcf7-form-control.wpcf7-text {
+    padding: 5px;
+    border: solid 1px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #333334;
+    color: white;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+input.wpcf7-form-control.wpcf7-submit:focus,input.wpcf7-form-control.wpcf7-submit:hover {
+  background: #ee3642;
+}

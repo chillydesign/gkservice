@@ -1,5 +1,23 @@
 
 $mob_nav_width: 300px;
+.headerfixed {
+  border-bottom: 6px double $brand_color;
+
+}
+@media (min-width: $browser_small) {
+
+  .headerfixed {
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999999999;
+    background: white;
+  }
+
+  main#main {
+      padding-top: 115px;
+  }
+}
 
 header#page_header {
     color: white;
