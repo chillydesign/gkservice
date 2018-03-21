@@ -60,6 +60,14 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
 
 
 
+        $('.faq_container dt').on('click', function(e){
+            var $this = $(this);
+            var $answer = $this.data('answer');
+            console.log($answer);
+            $('dd').removeClass('is_open');
+            $( $answer ).addClass('is_open');
+        })
+
 
 
 

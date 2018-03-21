@@ -180,6 +180,7 @@ dl.faq_container {
         font-weight:bold;
         margin:0 0 20px;
         background: #f1f1f1;
+        cursor: pointer;
     }
     dd {
         font-size:1.4em;
@@ -187,7 +188,11 @@ dl.faq_container {
         margin:-20px 0 20px;
         line-height: 150%;
         border: solid 1px #f1f1f1;
+        display: none;
 
+        &.is_open {
+            display: block;
+        }
     }
 }
 
@@ -227,7 +232,7 @@ ul.people_container  {
             flex:1 auto 0;
             width:100%;
         }
-        
+
         h3 {
             font-size: 1.2em;
         }
