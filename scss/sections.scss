@@ -123,11 +123,11 @@ section {
         }
 
 
-                &:hover {
-                    .service_icon {
-                        transform: scale(1.1);
-                    }
-                }
+        &:hover {
+            .service_icon {
+                transform: scale(1.1);
+            }
+        }
 
         h3 {
             font-size: 2em;
@@ -167,4 +167,73 @@ section {
         width: 200px !important;
         height: auto !important;
     }
+}
+
+
+
+
+dl.faq_container {
+    margin:0 0 20px;
+    dt {
+        padding:20px;
+        font-size:1.5em;
+        font-weight:bold;
+        margin:0 0 20px;
+        background: #f1f1f1;
+    }
+    dd {
+        font-size:1.4em;
+        padding:10px 20px;
+        margin:-20px 0 20px;
+        line-height: 150%;
+        border: solid 1px #f1f1f1;
+
+    }
+}
+
+
+ul.people_container  {
+    margin: 0 0 20px;
+    padding:0;
+    list-style:none;
+
+
+
+    li {
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        .person_image {
+            -webkit-box-flex:1;
+            -ms-flex:1 auto 0px;
+            flex:1 auto 0;
+            width: 140px;
+            height: 140px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 50%;
+            margin:0 20px 0 0;
+            padding: 0;
+
+
+        }
+
+        .bio_container {
+            -webkit-box-flex:1;
+            -ms-flex:1 auto 0px;
+            flex:1 auto 0;
+            width:100%;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+        }
+
+
+    }
+
+
 }
