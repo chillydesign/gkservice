@@ -12,7 +12,7 @@
                 <p>
                   <strong>Garzetta Kernen Sàrl</strong><br>
                   1207 Genève<br><br>
-                  <strong>Téléphone :</strong> 022 849 05 49<br>
+                  <strong>Téléphone :</strong> <a color="white; text-decoration:none; border-bottom:none" href="tel:+41 22 849 05 49">+41 22 849 05 49</a><br>
                   <strong>Email :</strong> <a href="mailto:contact@gkservice.ch" target="_blank">contact@gkservice.ch</a>
                 </p>
 
@@ -22,9 +22,9 @@
 
                 <h4>Nos services</h4>
                 <p>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Dépannage Serrurerie</a>  <br>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Services à la personne</a>  <br>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Entretien</a>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Dépannage Serrurerie</a> <br>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Entretien</a> <br>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Services à la personne</a>
                 </p>
 
 
