@@ -4,6 +4,20 @@ footer {
     margin:40px 0 0;
     color: lighten( $font_color, 75);
 
+
+    #horse_div {
+        background-position: 21% center;
+         background-size:cover;
+         background-repeat: no-repeat;
+    
+          border-top: 6px double #fff;
+          position:relative;
+
+        @media (min-width: $browser_small) {
+            background-position: center  center;
+        }
+    }
+
     h4 {
         text-transform: uppercase;
     }
@@ -37,10 +51,10 @@ footer {
         border-top:1px solid white;
         padding: 20px 0;
         text-align: center;
-         p {
-             padding: 0;
-             margin: 0;
-         }
+        p {
+            padding: 0;
+            margin: 0;
+        }
     }
 
 

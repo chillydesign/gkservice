@@ -2,7 +2,7 @@
 <?php $tdu = get_template_directory_uri(); ?>
 
 <footer>
-  <div style="background-image:url(<?php echo get_template_directory_uri();?>/img/cheval-pas.jpg); background-size:cover; background-position:center;    border-top: 6px double #fff;position:relative;">
+  <div id="horse_div" style="background-image:url(<?php echo get_template_directory_uri();?>/img/cheval-pas.jpg);">
     <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(51, 51, 52, 0.5); z-index:1;"></div>
     <div class="container" style="z-index:2; position:relative" >
         <div class="footer_columns" >
