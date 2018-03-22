@@ -1,7 +1,7 @@
 
 
 /*TYPOGRAPHY*/
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5, h6 {
     line-height: 120%;
     font-family: $header_font_stack;
 }
@@ -43,6 +43,22 @@ h4 {
     font-size: 1.69em;
     padding:0 0 10px;
     font-weight: bold;
+}
+
+h6 a, a h6 {
+    border: 2px solid $brand_color;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: $brand_color;
+    transition: all 0.3s;
+
+    &:hover {
+        background: $brand_color;
+        color: white !important;
+    }
 }
 
 
