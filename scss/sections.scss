@@ -235,6 +235,11 @@ ul.people_container  {
         display:flex;
         margin:0 0 50px;
 
+        &:after {
+            background: none;
+            display: none;
+        }
+
         flex-wrap:nowrap;
         $person_width:170px;
         $person_width_small:120px;
@@ -306,6 +311,11 @@ ul.people_container  {
         min-width: #{100% / 2 };
         border-left: 20px solid white;
         border-right: 20px solid white;
+
+        &:after {
+            background: none;
+            display: none;
+        }
 
         @media (min-width: $browser_small) {
             width: #{100% / 3 };
