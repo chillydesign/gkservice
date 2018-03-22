@@ -231,18 +231,26 @@ ul.people_container  {
 
 
     li {
+        $person_width:170px;
+        $person_width_small:120px;
 
         display:flex;
         margin:0 0 50px;
+        flex-wrap:wrap;
+        justify-content: center;
+        text-align: center;
+
+        @media (min-width: $browser_small) {
+            flex-wrap:nowrap;
+            text-align: left;
+        }
 
         &:after {
             background: none;
             display: none;
         }
 
-        flex-wrap:nowrap;
-        $person_width:170px;
-        $person_width_small:120px;
+
         .person_image {
             -webkit-box-flex:1;
             -ms-flex:1 auto 0px;
@@ -255,7 +263,7 @@ ul.people_container  {
             background-position: center center;
             background-size: cover;
             border-radius: 50%;
-            margin:0 20px 0 0;
+            margin:0 20px 20px 0;
             padding: 0;
 
             @media (min-width: $browser_small) {
