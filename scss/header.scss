@@ -106,10 +106,20 @@ header#page_header {
                 }
 
 
+                    &.hide_on_mobile > a {
+                        display: none;
+
+                    }
+
 
                 @media (min-width: $browser_small) {
                     display: inline-block;
                     flex: 1 auto 0;
+
+                    &.hide_on_mobile > a {
+                        display: inline-block;
+
+                    }
 
                 }
 
