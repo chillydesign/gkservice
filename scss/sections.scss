@@ -302,7 +302,6 @@ ul.people_container  {
     flex-wrap: wrap;
     .single_partner {
         display: inline-block;
-
         width: #{100% / 2 };
         min-width: #{100% / 2 };
         border-left: 20px solid white;
@@ -313,15 +312,19 @@ ul.people_container  {
             min-width: #{100% / 3 };
 
         }
-
-
         a {
+            display: block;
+            border: 0 !important;
+
+            &:hover {
+                    background-color: transparent;
+            }
 
         }
         .partner_icon {
-            height: 300px;
+                height: 200px;
                 width: 100%;
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
         }

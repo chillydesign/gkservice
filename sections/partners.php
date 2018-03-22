@@ -6,7 +6,7 @@
         <?php if ($title): ?> <h2><span><?php echo $title; ?></span></h2> <?php endif; ?>
     <div class="partners_container">
         <?php foreach ($partners as $partner)  :  ?>
-            <?php $image = $partner['icon']['sizes']['medium']; ?>
+            <?php $image = $partner['image']['sizes']['medium']; ?>
             <?php $link = $partner['link']; ?>
             <div class="single_partner">
                 <?php if ($link): ?>
