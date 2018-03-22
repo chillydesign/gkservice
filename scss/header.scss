@@ -1,23 +1,23 @@
 
 $mob_nav_width: 300px;
 .headerfixed {
-  border-bottom: 6px double $brand_color;
+    border-bottom: 6px double $brand_color;
 
 }
 @media (min-width: $browser_small) {
 
-  .headerfixed {
-    height: 115px;
-    width: 100%;
-    position: fixed;
-    z-index: 9999999999999;
-    background: white;
-    background: transparentize(white, 0.03);
-  }
+    .headerfixed {
+        height: 115px;
+        width: 100%;
+        position: fixed;
+        z-index: 9999999999999;
+        background: white;
+        background: transparentize(white, 0.03);
+    }
 
-  main#main {
-      padding-top: 115px;
-  }
+    main#main {
+        padding-top: 115px;
+    }
 }
 
 header#page_header {
@@ -27,7 +27,7 @@ header#page_header {
     flex-wrap: nowrap;
     padding: 20px 0;
 
-    a.branding { 
+    a.branding {
         display: block;
         flex:1 auto 0;
         background: url('../img/gk-horizontal.svg') no-repeat left top;
@@ -97,6 +97,13 @@ header#page_header {
                 margin: 0;
                 text-transform: uppercase;
                 text-align: left;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    background: none;
+                    display: none;
+                }
 
 
 
@@ -111,7 +118,7 @@ header#page_header {
                     color: white;
                     padding: 20px 20px;
                     border: 0;
-                        border-bottom: 3px double transparent;
+                    border-bottom: 3px double transparent;
 
                     &:hover {
                         background-color: transparentize(white, 0.8);
@@ -129,6 +136,55 @@ header#page_header {
 
 
                 } // END OF A
+
+
+
+
+                @media (min-width: $browser_small) {
+                    &:hover {
+                        ul.sub-menu {
+                            display: block;
+                        }
+                    }
+
+                }
+
+                ul.sub-menu {
+
+                    margin: 0;
+
+                    @media (min-width: $browser_small) {
+                        display: none;
+                        position: absolute;
+                        top:45px;
+                        left: -50px;
+                        width: 300px;
+
+                        li {
+                            font-size: 0.75em;
+                            margin: 0;
+                            padding: 00px;
+                            display: block;
+
+                            a {
+                                color: white;
+                                background: $brand_color;
+                                color: white;
+                                display: block;
+                                padding: 10px;
+
+                                &:hover {
+                                    background-color: darken($brand_color, 10);
+                                }
+                            }
+                        }
+                    } // end of for big browsers
+                } // end of .sub-menu
+
+
+
+
+
             } // END OF LI
         } // END OF UL
 

@@ -75,7 +75,22 @@ h6 a, a h6 {
 
 
 p { font-size: 1.65em;padding:0 0 30px;line-height: 160%;font-weight:200;  }
-li { font-size: 1.65em;padding:0 0 5px;line-height: 160%; font-weight:200; }
+li { font-size: 1.65em;padding:0 0 5px 20px;line-height: 160%; font-weight:200;
+  list-style: none;
+  position: relative;
+
+  &:after {
+     content: '';
+  display: inline-block;
+  height: 20px;
+  width: 15px;
+  background: url('../img/bullet.png') no-repeat left 6px;
+  background-size: 12px;
+  position: absolute;
+  left: 0;
+  top:0;
+  }
+}
 
 
 

@@ -272,8 +272,8 @@ ul.people_container  {
 
         h3 {
             font-size: 1.2em;
-                padding-left: 30px;
-                padding-right: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
         p {
             padding-left: 30px;
@@ -284,4 +284,49 @@ ul.people_container  {
     }
 
 
+}
+
+
+
+
+
+.section_partners {
+    h2 {
+        text-align: center;
+    }
+}
+
+
+.partners_container {
+    display: flex;
+    flex-wrap: wrap;
+    .single_partner {
+        display: inline-block;
+
+        width: #{100% / 2 };
+        min-width: #{100% / 2 };
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+
+        @media (min-width: $browser_small) {
+            width: #{100% / 3 };
+            min-width: #{100% / 3 };
+
+        }
+
+
+        a {
+
+        }
+        .partner_icon {
+            height: 300px;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+        }
+        h3 {
+            display: none;
+        }
+    }
 }
