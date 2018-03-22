@@ -77,7 +77,7 @@ import featherlight from '../node_modules/featherlight/release/featherlight.min.
             // options
             infinite: true,
             accessibility: true,
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             prevArrow: '<div class="slick-prev">&lt;</div>',
             nextArrow: '<div class="slick-next">&gt;</div>',

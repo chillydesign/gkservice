@@ -7,9 +7,16 @@
     <div class="services_container">
         <?php foreach ($services as $service)  :  ?>
             <?php $image = $service['icon']['sizes']['medium']; ?>
+            <?php $page = $service['page'];  ?>
             <div class="single_service">
+                <?php if ($page): ?>
+                <a href="<?php echo $page; ?>">
+                <?php endif; ?>
                 <div class="service_icon" style="background-image:url(<?php echo $image; ?>);"></div>
                 <h3><?php echo $service['content']; ?></h3>
+                <?php if ($page): ?>
+                </a>
+                <?php endif; ?>
             </div>
         <?php endforeach; ?>
     </div>
