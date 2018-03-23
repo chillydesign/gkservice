@@ -26,7 +26,9 @@
                 <div class="container" >
                     <header id="page_header" >
                         <a href="#" id="menu_button" >Menu</a>
-                        <a class=" branding" href="<?php echo $home_url ; ?>" ><?php echo $blog_name; ?></a>
+                        <a class=" branding" href="<?php echo $home_url ; ?>" ><?php echo $blog_name; ?>
+                          <img src="<?php echo get_template_directory_uri();?>/img/gk-horizontal.jpg">
+                        </a>
                         <nav>
                             <ul>
                                 <?php chilly_nav('header_nav'); ?>
@@ -36,6 +38,7 @@
                             </ul>
                         </nav>
                     </header>
+                    <div class="print_spacer"></div>
                 </div>
                 </div>
                 <main id="main" >

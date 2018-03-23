@@ -11,7 +11,7 @@
                 <h4>Contact</h4>
                 <p>
                   <strong>Garzetta Kernen Sàrl</strong><br>
-                  1207 Genève<br><br>
+                  <!-- Chemin du Môlan 4<br>1223 COLOGNY<br><br> -->
                   <strong>Téléphone :</strong> <a color="white; text-decoration:none; border-bottom:none" href="tel:+41 22 849 05 49">+41 22 849 05 49</a><br>
                   <strong>Email :</strong> <a href="mailto:contact@gkservice.ch" target="_blank">contact@gkservice.ch</a>
                 </p>
@@ -22,9 +22,8 @@
 
                 <h4>Nos services</h4>
                 <p>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Dépannage Serrurerie</a> <br>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Entretien</a> <br>
-                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="#">Services à la personne</a>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="<?php echo get_home_url(); ?>/serrurerie-depannage-et-securite/">Dépannage Serrurerie</a> <br>
+                  <a style="margin-left:-10px;padding-left:10px" class="social_icon" href="<?php echo get_home_url(); ?>/service/">Services</a>
                 </p>
 
 
