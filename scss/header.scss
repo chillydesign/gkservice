@@ -244,12 +244,13 @@ header#page_header {
   .footer_column {display: none;}
   .footer_column:first-child{display: block;}
   header {padding-bottom:0px;}
-  .headerfixed {position: relative; margin-bottom: 50px;}
+  .headerfixed {position: relative; margin-bottom: 50px;border:0 !important}
 
   section {padding: 0; margin: 0 0 0px; page-break-inside: avoid;}
   section.grey {background: white;}
   section.section_feature_image, section.section_logos {
     display: none;
+    border: 0;
   }
   section.section_people {margin-top: 80px;}
   * {
@@ -266,5 +267,11 @@ header#page_header {
   dd {
     display: block!important;
     page-break-before: avoid;
+  }
+
+  form {
+      div, p, input, textarea {
+              display: none !important
+      }
   }
 }
