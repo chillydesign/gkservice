@@ -1,6 +1,6 @@
 section {
 
-    padding: 100px 0 00px 0;
+    padding: 20px 0 50px 0;
 
     position: relative;
 
@@ -36,6 +36,7 @@ section {
     position: relative;
     // border-top: 6px double $brand_color;
     border-bottom: 6px double $brand_color;
+    margin-bottom: 80px;
     padding: 0;
 
     h2 {
@@ -70,6 +71,17 @@ section {
 
     }
 
+    .depannage-serrurerie-service{
+      position: absolute;
+      top: 0;
+      left:0;
+      right: 0;
+      bottom:0;
+      background: url('..img/depannage-serrurerie-service.png');
+      background-size:100%;
+      background-position: top;
+    }
+
 }
 
 
@@ -79,7 +91,8 @@ section {
 }
 .services_container {
 
-    margin: 0;
+    margin: 0 auto 0;
+    max-width: 750px;
 
     @media (min-width: $browser_small) {
 
@@ -92,11 +105,20 @@ section {
 
     .single_service {
         flex: 1 auto 0;
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 0 30px;
+        margin: 0 auto 30px;
+
+        a {
+          color: $dark_grey;
+          border-bottom: 0;
+          display: block;
+          &:hover {
+            background: none;
+          }
+        }
 
     a {
         display: block;
@@ -111,7 +133,7 @@ section {
             background-repeat: no-repeat;
             background-size: 180px;
             background-position: center center;
-            background-color: $light_grey;
+            // background-color: $light_grey;
             height: 210px;
             width: 210px;
             transform: scale(1);
@@ -152,7 +174,6 @@ section {
 
 
 .section_colonnes {
-    padding-top:40px;
     h2 {
         padding-top:80px;
         text-align: center;
@@ -168,6 +189,7 @@ section {
 
 
 .section_logos {
+  padding-bottom: 20px; background: #f1f1f1;
     a {
         border: 0;
         padding: 0;
@@ -360,3 +382,5 @@ ul.people_container  {
         }
     }
 }
+
+.grey {background: #f1f1f1;}

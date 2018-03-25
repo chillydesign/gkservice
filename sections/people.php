@@ -9,7 +9,8 @@
 	<?php $faq = 0; while ( have_rows('people') ) : the_row(); ?>
         <?php $image = get_sub_field( 'image' ); ?>
         <li>
-            <div class="person_image" style="background-image:url(<?php echo $image['sizes']['medium']; ?>)"></div>
+            <!-- <div class="person_image" style="background-image:url(<?php echo $image['sizes']['medium']; ?>)"></div> -->
+            <div class="person_image"><img style="border-radius:50%" src="<?php echo $image['sizes']['medium']; ?>)"></div>
             <div class="bio_container">
             <h3><?php echo get_sub_field('name'); ?></h3>
             <p><?php echo get_sub_field('biography'); ?></p>
