@@ -11,7 +11,7 @@
                 <h4>Contact</h4>
                 <p>
                   <strong>Garzetta Kernen Sàrl</strong><br>
-                  <!-- Chemin du Môlan 4<br>1223 COLOGNY<br><br> -->
+                  <!-- Chemin du Môlan 4<br> -->1223 COLOGNY<br>
                   <strong>Téléphone :</strong> <a color="white; text-decoration:none; border-bottom:none" href="tel:+41 22 849 05 49">+41 22 849 05 49</a><br>
                   <strong>Email :</strong> <a href="mailto:contact@gkservice.ch" target="_blank">contact@gkservice.ch</a>
                 </p>

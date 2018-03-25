@@ -91,7 +91,8 @@ section {
 }
 .services_container {
 
-    margin: 0;
+    margin: 0 auto 0;
+    max-width: 750px;
 
     @media (min-width: $browser_small) {
 
@@ -104,11 +105,11 @@ section {
 
     .single_service {
         flex: 1 auto 0;
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 0 30px;
+        margin: 0 auto 30px;
 
         a {
           color: $dark_grey;
@@ -124,7 +125,7 @@ section {
             background-repeat: no-repeat;
             background-size: 180px;
             background-position: center center;
-            background-color: $light_grey;
+            // background-color: $light_grey;
             height: 210px;
             width: 210px;
             transform: scale(1);
